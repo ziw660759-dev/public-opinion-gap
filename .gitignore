@@ -1,0 +1,5 @@
+.DS_Store
+.env
+.env.*
+worker/.dev.vars
+worker/wrangler.toml
