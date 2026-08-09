@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f2f0e9" />
+  <meta name="description" content="舆情温差 V2：识别官方解释与公众关切之间的未回应、解释不足、重点错位与认知错位。" />
+  <title>舆情温差 V2 · Public Opinion Gap</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="brand brand-button" id="brandHome" aria-label="返回分析结果">
+        <div class="brand-mark">△</div>
+        <div><strong>舆情温差 <em>V2</em></strong><span>PUBLIC OPINION GAP</span></div>
+      </button>
+      <nav>
+        <button class="nav-btn nav-active" data-page="overview">分析结果</button>
+        <button class="nav-btn" data-page="input">新建分析</button>
+        <button class="nav-btn" id="settingsBtn">AI 设置</button>
+      </nav>
+      <div class="top-actions">
+        <span class="mode-pill" id="modePill">LOCAL</span>
+        <a class="github-link" href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </div>
+    </header>
+
+    <main id="app"></main>
+
+    <footer>
+      <span>舆情温差 V2 · Public Opinion Gap</span>
+      <span>不是“热度差”，而是官方解释与公众关切之间没有被回答的部分。</span>
+    </footer>
+  </div>
+
+  <div id="overlayRoot"></div>
+  <script src="./analysis-core.js"></script>
+  <script src="./ai-client.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
