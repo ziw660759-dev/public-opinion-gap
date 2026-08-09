@@ -1,0 +1,11 @@
+name = "public-opinion-gap-ai"
+main = "openai-worker.js"
+compatibility_date = "2026-08-01"
+
+[vars]
+OPENAI_MODEL = "gpt-5.4-mini"
+ALLOWED_ORIGIN = "https://YOUR_GITHUB_NAME.github.io"
+
+# Do NOT place OPENAI_API_KEY here.
+# Set it as a secret instead:
+# npx wrangler secret put OPENAI_API_KEY
